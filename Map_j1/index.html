@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <title>Google Map API</title>
+    <meta charset="UTF-8">
+    
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKKM12U3DGYq4JUbpUwcaSQh_Vy4bI2nk&callback=MAP_API.initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    
+    <link rel="stylesheet" type="text/css" href="./css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  
+  </head>
+  <body>
+    <div id="map"> 
+    </div>
+
+    <div id="formContainer" class="">
+      <form id="form">
+        <input id="inputId" name="id" type="hidden"><br>
+        <label for="name">name:</label><br>
+        <input type="text" id="name" name="name" ><br>
+        <label for="long">Longitude:</label><br>
+        <input type="number" id="long" name="long" step="any"><br>
+        <label for="long">Latitude:</label><br>
+        <input type="number" id="lat" name="lat" step="any"><br>
+        <input id="btnEnvoyer" type="submit" value="envoyer"/>
+      </form>
+    </div>
+
+    <div id="airports">
+      <h4>Liste des aéroports</h4>
+      <ul id="airports-list">
+    
+      </ul>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
